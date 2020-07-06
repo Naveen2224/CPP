@@ -9,3 +9,10 @@ int main()
 	return 0;
 	
 }
+
+
+#OUTPUT of this program :
+size of char: 1 byte
+size of int: 4 bytes
+size of float: 4 bytes
+size of double: 8 bytes
