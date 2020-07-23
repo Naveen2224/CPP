@@ -1,0 +1,42 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+class Time{
+	public:
+		int hours;
+		int min;
+		int seconds;
+		int t;	
+		int print_time()
+		{			
+			cout<<"time is ";
+			cout<<setw(2)<<setfill('0')<<hours<<":"<<setw(2)<<setfill('0')<<min<<":"<<setw(2)<<setfill('0')<<seconds<<endl;		
+			t=(hours*60*60)+(min*60)+(seconds);
+			cout<<"time in total seconds: "<<t<<endl;
+		}		
+};
+int main()
+{
+	Time T;
+  cout<<"enter time: "<<endl;
+	cout<<"Hours? ";
+	cin>>T.hours;
+	cout<<"minutes? ";
+	cin>>T.min;	
+	cout<<"seconds? ";
+	cin>>T.seconds;
+	T.print_time();
+}
+
+
+
+
+#OUTPUT:  
+enter time: 
+Hours? 1             // 1 is user input
+minutes? 1           // 1 is user input
+seconds? 6           // 6 is user input
+time is 01:01:06
+time in total seconds: 3666
+
+
